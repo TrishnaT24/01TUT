@@ -4,24 +4,29 @@ import AddItem from './AddItem';
 import Content from './Content';
 import Footer from './Footer';
 import { useState, useEffect } from 'react';
-import Checklist from './checklist';
-import List from './budget'; 
-import {Route ,Switch ,useHistory} from 'react-router-dom';
+import Checklist from './Checklist';
+import List from './Budget';
 import Missing from './Missing';
 import Homepage from './Homepage';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 
 
 function App() {
-  return(
+  return (
+
     <div className='App'>
-      <Homepage />
-      <List />
-      <Missing />
-      <List />
+      
+      <Router>
+        <Routes>
+          <Route path="/checklist" element={<Checklist />} />
 
-
+          <Route path="/budget" element={<List />} />
+          <Route path="/missing" element={<Missing />} />
+        </Routes>
+      </Router>
     </div>
-    
+
+
 
   );
 }

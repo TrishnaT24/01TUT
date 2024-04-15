@@ -1,9 +1,13 @@
-const Homepage = () => {
+import React from 'react';
+//import { Link } from 'react-router-dom';
+
+function Homepage() {
   return (
     <main>
-        Welcome to Jodi Junction. This is the homepage
-    </main>
-  )
+      WELCOME TO JODI JUCNTION
+      This is the home page.
+      </main>
+  );
 }
 
-export default Homepage
+export default Homepage;
