@@ -2,25 +2,19 @@ import { people } from './vendors.js';
 import { useState } from 'react';
 
 function List() {
-
-
-  const[FilterBudget, setFilterBudget]=useState(0);
-  const[FilterProfession, setFilterProfession]=useState("Cateror");
+  const [FilterBudget, setFilterBudget] = useState(0);
   const handleFilterChange = (event) => {
-    setFilterBudget(parseInt(event.target.value,10)); 
+    setFilterBudget(parseInt(event.target.value, 10));
   };
-  const handleFilterChange1 = (event1) => {
-    setFilterProfession(event1.target.value); 
-  };
-let choosevendors=people;
-if(FilterBudget!==0 || FilterProfession!=="Cateror")
-{choosevendors = people.filter(person =>
-  person.budget=== FilterBudget || person.profession.toLowerCase().startsWith(FilterProfession.toLowerCase())===FilterProfession.toLowerCase().startsWith(FilterProfession.toLowerCase())
-);
-}
+  let choosevendors = people;
+  if (FilterBudget !== 0) {
+    choosevendors = people.filter(person =>
+      person.budget === FilterBudget 
+    );
+  }
 
-  const listItems = choosevendors.map(person =>(
-    <li key ={person.id} style={{ display: 'inline-block', marginRight: '10px', marginTop: '10px', marginLeft: '10px' }}>
+  const listItems = choosevendors.map(person => (
+    <li>
       <img
         src={person.imageUrl}
         alt={person.name}
@@ -36,12 +30,6 @@ if(FilterBudget!==0 || FilterProfession!=="Cateror")
   return (
     <div>
       {/* Input field for budget filter*/}
-      <label htmlFor="FilterProfession">Enter a Profession: </label>
-      <input type='text'
-        id="FilterProfession"
-        value={FilterProfession} // Set input value to the current filterProfession state
-        onChange={handleFilterChange1} // Call handleFilterChange function on input change
-      /><br />
       <label htmlFor="FilterBudget">Enter a Budget: </label>
       <input
         type="number"
@@ -49,8 +37,8 @@ if(FilterBudget!==0 || FilterProfession!=="Cateror")
         value={FilterBudget} // Set input value to the current filterProfession state
         onChange={handleFilterChange} // Call handleFilterChange function on input change
       />
-      
-      
+
+
 
       {/* Render the list*/}
       <ul>{listItems}</ul>

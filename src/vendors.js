@@ -10,7 +10,7 @@ export const people = [{
     profession: 'Decorator',
     budget:80000,
     imageUrl :"https://image.wedmegood.com/resized/450X/uploads/member/360827/1544254372_4_d_.jpg?crop=11,38,941,529"
-  }, {
+  }, /*{
     id: 2,
     name: 'The Petite Project',
     profession: 'Decorator',
@@ -70,4 +70,4 @@ export const people = [{
     profession: 'Invitations',
     budget:200,
     imageUrl :"https://image.wedmegood.com/resized/450X/uploads/member/200497/1606748542_Post_142_2.jpg?crop=4,152,991,557"
-  },];
+  },*/];
