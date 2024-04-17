@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import Checklist from './Checklist';
 import List from './Budget';
 import Missing from './Missing';
-import Homepage from './Homepage';
+import Login from './Login';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 
 
@@ -15,9 +15,9 @@ function App() {
   return (
 
     <div className='App'>
-      
       <Router>
         <Routes>
+          <Route path ="/Login" element ={<Login />} />
           <Route path="/checklist" element={<Checklist />} />
 
           <Route path="/budget" element={<List />} />
