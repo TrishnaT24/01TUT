@@ -1,10 +1,11 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {Navbar} from './components/Navbar';
 import {Shop} from './pages/shop/Shop';
 import {Cart} from './pages/cart/Cart';
 import { ShopContextProvider } from './context/shop-context';
-function App() {
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+
+const Appjheel = () => {
   return (
     <div className="App">
       <ShopContextProvider>
@@ -20,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Appjheel

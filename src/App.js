@@ -1,4 +1,4 @@
-import Header from './Header';
+/*import Header from './Header';
 import SearchItem from './SearchItem';
 import AddItem from './AddItem';
 import Content from './Content';
@@ -9,6 +9,10 @@ import List from './Budget';
 import Missing from './Missing';
 import Login from './Login';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Shop } from './pages/shop/Shop';
+import { Cart } from './pages/cart/Cart';
+import { ShopContextProvider } from './context/shop-context';
 
 
 function App() {
@@ -17,9 +21,9 @@ function App() {
     <div className='App'>
       <Router>
         <Routes>
+          <Route path="/Appjheel" element={<Appjheel />} />
           <Route path ="/Login" element ={<Login />} />
           <Route path="/checklist" element={<Checklist />} />
-
           <Route path="/budget" element={<List />} />
           <Route path="/missing" element={<Missing />} />
         </Routes>
@@ -32,3 +36,41 @@ function App() {
 }
 
 export default App;
+*/
+import './Shop.css';
+import { Navbar } from './components/Navbar';
+import { Shop } from './pages/shop/Shop';
+import { Cart } from './pages/cart/Cart';
+import { ShopContextProvider } from './context/shop-context';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Checklist from './Checklist';
+import List from './Budget';
+import Missing from './Missing';
+import Login from './Login';
+
+
+function App() {
+  return (
+    <div className='App'>
+      <ShopContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/checklist" element={<Checklist />} />
+            <Route path="/budget" element={<List />} />
+            <Route path="/missing" element={<Missing />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider>
+    </div>
+  );
+}
+
+export default App;
+
+
+
