@@ -39,7 +39,7 @@ export default App;
 */
 import { db } from './FirebaseConfig';
 import './Shop.css';
-import { Navbar } from './components/Navbar';
+/*import { Navbar } from './components/Navbar';*/
 import { Shop } from './pages/shop/Shop';
 import { Cart } from './pages/cart/Cart';
 import { ShopContextProvider } from './context/shop-context';
@@ -49,6 +49,8 @@ import Checklist from './Checklist';
 import List from './Budget';
 import Missing from './Missing';
 import Login from './Login';
+import Home from'./startpage/AppSP';
+import NavbarSP from './startpage/componentsSP/NavbarSP';
 import { getDocs, doc, collection } from 'firebase/firestore';
 
 
@@ -71,8 +73,9 @@ function App() {
     <div className='App'>
       <ShopContextProvider>
         <Router>
-          <Navbar />
+          <NavbarSP />
           <Routes>
+            <Route path="/home" exact element={ <Home />}/>
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/Login" element={<Login />} />

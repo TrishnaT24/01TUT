@@ -5,7 +5,7 @@ import Content from './Content';
 import Footer from './Footer';
 import { useState } from 'react';
 function Checklist (){
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')));
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')) || []);
   const [newItem,setNewItem]=useState('')
   const [search,setSearch]=useState('')
 
