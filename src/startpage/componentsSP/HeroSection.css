@@ -1,0 +1,70 @@
+.hero-container {
+    background: url('../componentsSP/imagesSP/landscape.jpg') center/cover no-repeat; 
+    background-position: center bottom no-repeat; /* Adjusted background position */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.hero-container > h1 {
+    color: #000000;
+    font-size: 60px; /* Decreased font size */
+    margin-top: -300px; /* Adjusted margin-top */
+    text-align: center; /* Center align the text */
+    text-shadow: 4px 4px 6px rgba(44, 83, 239, 0.5); /* Add a subtle text shadow */
+}
+
+.hero-container > p {
+    margin-top: 3px;
+    color: #141313;
+    font-size: 40px; /* Decreased font size */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    text-align: center; /* Center align the text */
+    text-shadow: 2px 2px 4px rgba(44, 83, 239, 0.5);
+}
+
+
+.hero-btns {
+    margin-top: 32px;
+}
+
+.hero-btns .btn {
+    margin: 6px;
+}
+
+.fa-play-circle {
+    margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+    .hero-container > h1 {
+      font-size: 70px;
+      margin-top: -150px; /* Adjusted margin-top */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container > h1 {
+      font-size: 50px;
+      margin-top: -100px; /* Adjusted margin-top */
+    }
+  
+    .hero-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+}
