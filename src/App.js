@@ -37,6 +37,7 @@ function App() {
 
 export default App;
 */
+import { db } from './FirebaseConfig';
 import './Shop.css';
 import { Navbar } from './components/Navbar';
 import { Shop } from './pages/shop/Shop';
@@ -48,9 +49,24 @@ import Checklist from './Checklist';
 import List from './Budget';
 import Missing from './Missing';
 import Login from './Login';
+import { getDocs, doc, collection } from 'firebase/firestore';
 
 
 function App() {
+  useEffect(() => {
+    // Fetch data from Firestore when component mounts
+    const fetchData = async () => {
+        const querySnapshot = await getDocs(collection(db,'cart'));
+        querySnapshot.forEach(doc => {
+          console.log(doc.data());
+        });
+      // catch (error) {
+      //   console.error('Error fetching data from Firestore:', error);
+      // }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className='App'>
       <ShopContextProvider>
