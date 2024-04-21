@@ -38,7 +38,7 @@ function App() {
 export default App;
 */
 import { db } from './FirebaseConfig';
-import './Shop.css';
+import './pages/shop/shop.css';
 /*import { Navbar } from './components/Navbar';*/
 import { Shop } from './pages/shop/Shop';
 import { Cart } from './pages/cart/Cart';
@@ -52,6 +52,8 @@ import Login from './Login';
 import Home from'./startpage/AppSP';
 import NavbarSP from './startpage/componentsSP/NavbarSP';
 import { getDocs, doc, collection } from 'firebase/firestore';
+import Blog from './startpage/cardfollow/Blog';
+import Jewellery from './pages/shop/Jewellery';
 
 
 function App() {
@@ -76,6 +78,8 @@ function App() {
           <NavbarSP />
           <Routes>
             <Route path="/home" exact element={ <Home />}/>
+            <Route path="/jewellery" exact element={ <Jewellery />}/>
+            <Route path="/blog" exact element={<Blog/>} />
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/Login" element={<Login />} />

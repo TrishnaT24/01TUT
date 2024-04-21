@@ -7,6 +7,9 @@ import mehendi from'./imagesSP/mehendi3.jpeg';
 import wedding from './imagesSP/wedding.jpeg';
 import couple from './imagesSP/random couple.jpeg';
 import hands from './imagesSP/hands.jpeg';
+import Blog from '../../startpage/cardfollow/Blog';
+import Jewellery from '../../pages/shop/Jewellery';
+
 const Cards = () => {
   return (
     <div className='cards'>
@@ -17,7 +20,7 @@ const Cards = () => {
                     <CardItem  src={jewellery}
                     text="Indulge in Elegance: Discover Our Exquisite Jewelry Collection!"
                     label='Jewellery'
-                    path='/'/>
+                    path='/jewellery'/>
                     <CardItem  src={bridal}
                     text="Imagine the Perfect Bridal Ensemble: Your Dream Wedding Attire Awaits!"
                     label='Bridal Wear'
@@ -34,9 +37,9 @@ const Cards = () => {
                     label='Wedding'
                     path='/'/>
                     <CardItem  src={couple}
-                    text="TOP 9 wedding destinations in India"
+                    text="TOP 5 wedding destinations in India"
                     label='Blog'
-                    path='/'/>
+                    path='/blog'/>
                     <CardItem  src={hands}
                     text="Dont Know about Indian Wedding rituals? Click Here to know more"
                     label='Rituals'
