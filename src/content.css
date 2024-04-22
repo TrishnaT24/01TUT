@@ -1,0 +1,14 @@
+/* content.css */
+
+.cont {
+    margin-top: 30px; 
+    font-family: 'Roboto', sans-serif; /* Add margin to the top */
+  }
+  
+  .cont p {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif; 
+    font-weight: bold;
+    color: #f10505; /* Optional: Customize text color */
+  }
+  

@@ -1,0 +1,38 @@
+/* checklist.css */
+body {
+    background-color: pink; /* Set background color of the whole screen to pink */
+}
+
+.Checklist {
+    max-width: 600px; /* Set maximum width for the checklist */
+    margin: 0 auto; /* Center the checklist horizontally */
+    padding: 20px; /* Add padding around the checklist */
+    box-shadow: 0 0 10px rgba(227, 10, 201, 0.5); /* Add a subtle box shadow */
+    border-radius: 5px; /* Add border radius to round the corners */
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .Checklist h1 {
+    margin-bottom: 20px; /* Add margin below the title */
+  }
+  
+  /* Style for the AddItem component */
+  .AddItem {
+    margin-bottom: 20px; /* Add margin below the AddItem component */
+  }
+  
+  /* Style for the SearchItem component */
+  .SearchItem {
+    margin-bottom: 20px; /* Add margin below the SearchItem component */
+  }
+  
+  /* Style for the Content component */
+  .Content {
+    margin-bottom: 20px; /* Add margin below the Content component */
+  }
+  
+  /* Style for the Footer component */
+  .Footer {
+    margin-top: 20px; /* Add margin above the Footer component */
+  }
+  

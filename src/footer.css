@@ -1,0 +1,12 @@
+/* footer.css */
+
+.foot {
+    text-align: center; /* Center align the footer */
+    margin-top: 10px; /* Add some margin at the top */
+  }
+  
+  .foot footer {
+    font-size: 25px; /* Set the font size */
+    color: #030202; /* Set the text color */
+  }
+  
