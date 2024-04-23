@@ -46,7 +46,7 @@ import { ShopContextProvider } from './context/shop-context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Checklist from './Checklist';
-import List from './Budget';
+import List from './budget';
 import Missing from './Missing';
 import Login from './Login';
 import Home from'./startpage/AppSP';

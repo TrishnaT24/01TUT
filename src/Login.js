@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { auth } from './FirebaseConfig';
 import {createUserWithEmailAndPassword} from 'firebase/auth';
+import './login.css';
 function Login() {
     const [values,setValues]= useState({
         name:'',

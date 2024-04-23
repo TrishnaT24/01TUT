@@ -1,37 +1,25 @@
-/*import React from 'react'
-import {Product} from './Product';
-import {PRODUCTS} from '../products';
-import './shop.css';
-
-export const Shop = () => {
-  return (
-    <div className="Shop">
-     <div className="shoptittle">
-        <h1>FLOWERS</h1>
-     </div>
-     <div className="Product">{PRODUCTS.map((product) => (
-     <Product data={product}/>
-    ))}
-     </div>
-    </div>
-  )
-}*/
-
-import React from "react";
-import { PRODUCTS } from "../../products";
+import React, { useState } from "react";
+import { vendors } from "../../vendors";
 import { Product } from "./Product";
+import BudgetFilter from "../../budget.js"; // Assuming BudgetFilter component exists
 import "./shop.css";
-
 export const Shop = () => {
+  // State for filtered products based on budget
+  const [filteredProducts, setFilteredProducts] = useState(vendors);
+
   return (
     <div className="shop">
       <div className="shopTitle">
         <h1>Decor</h1>
       </div>
 
+      {/* Budget filter component */}
+      <BudgetFilter products={vendors} setFilteredProducts={setFilteredProducts} />
+
       <div className="products">
-        {PRODUCTS.map((product) => (
-          <Product data={product} />
+        {/* Render products based on filtered products */}
+        {filteredProducts.map((product) => (
+          <Product data={product} key={product.id} />
         ))}
       </div>
     </div>

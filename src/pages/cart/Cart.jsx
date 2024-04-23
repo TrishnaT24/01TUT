@@ -1,11 +1,10 @@
 import React , {useContext }from 'react'
-import {PRODUCTS} from '../products';
+import {vendors} from '../../vendors';
 import {ShopContext} from '../.././context/shop-context';
 import {CartItem} from "./cart-item"
 import "./cart.css";
 import { Shop } from '../shop/Shop';
 import {useNavigate} from 'react-router-dom'
-
 export const Cart = () => {
     const {cartItems,getTotalAmount}=useContext(ShopContext);
     const totalAmount= getTotalAmount();
@@ -14,7 +13,7 @@ export const Cart = () => {
     <div className="cart">
       <div>Your Cart Items</div>
       <div className="cartItems">
-        {PRODUCTS.map((product)=> {
+        {vendors.map((product)=> {
             if(cartItems[product.id]!==0){
                 return<CartItem data={product}/>;
             }
@@ -29,4 +28,3 @@ export const Cart = () => {
     </div>
   )
 }
-

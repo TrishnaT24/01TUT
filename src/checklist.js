@@ -4,6 +4,7 @@ import SearchItem from './SearchItem';
 import Content from './Content';
 import Footer from './Footer';
 import { useState } from 'react';
+import './checklist.css';
 function Checklist (){
   const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')) || []);
   const [newItem,setNewItem]=useState('')
