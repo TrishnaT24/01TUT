@@ -48,14 +48,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Checklist from './Checklist';
 import List from './budget';
-import Missing from './Missing';
 import Login from './Login';
 import Home from'./startpage/AppSP';
 import NavbarSP from './startpage/componentsSP/NavbarSP';
 import { getDocs, doc, collection } from 'firebase/firestore';
 import Blog from './startpage/cardfollow/Blog';
 import { ShopContextProviderJewellery } from './context/shop-context-jewellery';
-
 
 function App() {
   useEffect(() => {
@@ -87,7 +85,6 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/checklist" element={<Checklist />} />
             <Route path="/budget" element={<List />} />
-            <Route path="/missing" element={<Missing />} />
           </Routes>
         </Router>
         </ShopContextProviderJewellery>

@@ -1,10 +1,9 @@
-import React from "react";//done
-import { JPRODUCTS } from "../shop/Jewellery-products";//done
-import Productj  from "./productj";
-//import "./Jewellery.css";
+import React from "react";
+import { JPRODUCTS } from "../shop/Jewellery-products";
+import { Product } from "./Product";
 import './shop.css';
 
- export const Jewellery = () => {
+export const Jewellery = () => {
   return (
     <div className="shop">
       <div className="shopTitle">
@@ -13,7 +12,7 @@ import './shop.css';
 
       <div className="products">
         {JPRODUCTS.map((product) => (
-          <Productj data={product} />
+          <Product key={product.id} data={product} isJewellery={true} />
         ))}
       </div>
     </div>

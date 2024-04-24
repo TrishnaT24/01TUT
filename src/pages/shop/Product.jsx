@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
 
-
 export const Product = (props) => {
-  const { id, productName, price, productImage } = props.data;
-  const { addToCart, cartItems } = useContext(ShopContext);
+  const { id, productName, price, productImage, isJewellery } = props.data;
+  const { addToCart, cartItems, cartitemsJewellery } = useContext(ShopContext);
 
-  const cartItemCount = cartItems[id];
+  const cartItemCount = isJewellery ? cartitemsJewellery[id] : cartItems[id];
 
   return (
     <div className="product">
