@@ -3,7 +3,7 @@ import Navbar from './componentsSP/NavbarSP';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Home from './componentsSP/PagesSP/Home';
 import Blog from './cardfollow/Blog';
-import Jewellery from '../pages/shop/Jewellery';
+import {Jewellery} from '../pages/shop/Jewellery';
 
 function App() {
   return (

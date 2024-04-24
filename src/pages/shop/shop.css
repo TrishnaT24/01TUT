@@ -24,6 +24,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   
+
   .product img {
     width: 200px; /* Reduced image width to fit within the smaller box */
     height: auto; /* Allowing height to adjust based on content */

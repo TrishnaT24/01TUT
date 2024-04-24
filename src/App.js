@@ -42,6 +42,7 @@ import './pages/shop/shop.css';
 /*import { Navbar } from './components/Navbar';*/
 import { Shop } from './pages/shop/Shop';
 import { Cart } from './pages/cart/Cart';
+import {Jewellery} from './pages/shop/Jewellery';
 import { ShopContextProvider } from './context/shop-context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -53,7 +54,7 @@ import Home from'./startpage/AppSP';
 import NavbarSP from './startpage/componentsSP/NavbarSP';
 import { getDocs, doc, collection } from 'firebase/firestore';
 import Blog from './startpage/cardfollow/Blog';
-import Jewellery from './pages/shop/Jewellery';
+import { ShopContextProviderJewellery } from './context/shop-context-jewellery';
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
   return (
     <div className='App'>
       <ShopContextProvider>
+        <ShopContextProviderJewellery>
         <Router>
           <NavbarSP />
           <Routes>
@@ -88,6 +90,7 @@ function App() {
             <Route path="/missing" element={<Missing />} />
           </Routes>
         </Router>
+        </ShopContextProviderJewellery>
       </ShopContextProvider>
     </div>
   );
