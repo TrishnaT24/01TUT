@@ -55,6 +55,7 @@ import { getDocs, doc, collection } from 'firebase/firestore';
 import Blog from './startpage/cardfollow/Blog';
 import {Bridal} from './pages/shop/Bridal';
 import  Catering from './pages/shop/Catering';
+import RealWedding from './startpage/cardfollow/RealWedding';
 
 function App() {
   useEffect(() => {
@@ -79,6 +80,7 @@ function App() {
           <Routes>
             <Route path="/"  element={ <Home />}/>
             <Route path="/catering" exact element={ <Catering />}/>
+            <Route path="/wedding" exact element={ <RealWedding />}/>
             <Route path="/jewellery" exact element={ <Jewellery />}/>
             <Route path="/outfit" exact element={ <Bridal />}/>
             <Route path="/blog" exact element={<Blog/>} />

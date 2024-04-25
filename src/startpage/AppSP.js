@@ -6,6 +6,7 @@ import Blog from './cardfollow/Blog';
 import {Jewellery} from '../pages/shop/Jewellery';
 import {Bridal} from '../pages/shop/Bridal';
 import Catering from '../pages/shop/Catering';
+import RealWedding from './cardfollow/RealWedding';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Route path="/jewellery" exact element={<Jewellery/>} />
     <Route path="/outfit" exact element={<Bridal/>} />
     <Route path="/catering" exact element={<Catering/>} />
+    <Route path="/wedding" exact element={<RealWedding/>} />
     </Routes>
     </Router>
     </>

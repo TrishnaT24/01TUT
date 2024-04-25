@@ -34,7 +34,7 @@ const Cards = () => {
                     <CardItem  src={wedding}
                     text="Weddings organised by JODI JUNCTION"
                     label='Wedding'
-                    path='/'/>
+                    path='/wedding'/>
                     <CardItem  src={couple}
                     text="TOP 5 wedding destinations in India"
                     label='Blog'
@@ -42,7 +42,7 @@ const Cards = () => {
                     <CardItem  src={decor}
                     text="Envision the Perfect Venue: Your Dream Wedding Decor Awaits!"
                     label='Decor'
-                    path='/'/>
+                    path='/shop'/>
                     
                 </ul>
             </div>
