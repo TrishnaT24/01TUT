@@ -1,12 +1,14 @@
 import React, { createContext, useState } from 'react';
 import { vendors } from '../vendors';
 import { JPRODUCTS } from '../pages/shop/Jewellery-products';
+import { MPRODUCTS } from '../pages/shop/Bridal-products';
+import {CPRODUCTS} from '../pages/shop/Catering-products';
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
   let maxId = 0;
-  for (const product of [...vendors, ...JPRODUCTS]) {
+  for (const product of [...vendors, ...JPRODUCTS,...MPRODUCTS,...CPRODUCTS]) {
     maxId = Math.max(maxId, product.id);
   }
   
@@ -25,11 +27,17 @@ export const ShopContextProvider = (props) => { // Add props as an argument
               let itemInfo = vendors.find((product) => product.id === Number(item));
               if (itemInfo) {
                   totalAmount += cartItems[item] * itemInfo.price;
-              } else {
-                  itemInfo = JPRODUCTS.find((product) => product.id === Number(item));
+              } else if(itemInfo = JPRODUCTS.find((product) => product.id === Number(item))) {
                   if (itemInfo) {
-                      totalAmount += cartItems[item] * itemInfo.price;
+                  totalAmount += cartItems[item] * itemInfo.price;
                   }
+              }
+              else if(itemInfo = MPRODUCTS.find((product) => product.id === Number(item)))
+              {
+                totalAmount += cartItems[item] * itemInfo.price;
+              }
+              else if(itemInfo = CPRODUCTS.find((product) => product.id === Number(item))){
+                totalAmount += cartItems[item] * itemInfo.price; 
               }
           }
       }

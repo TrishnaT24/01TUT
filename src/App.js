@@ -53,7 +53,8 @@ import Home from'./startpage/AppSP';
 import NavbarSP from './startpage/componentsSP/NavbarSP';
 import { getDocs, doc, collection } from 'firebase/firestore';
 import Blog from './startpage/cardfollow/Blog';
-import { ShopContextProviderJewellery } from './context/shop-context-jewellery';
+import {Bridal} from './pages/shop/Bridal';
+import  Catering from './pages/shop/Catering';
 
 function App() {
   useEffect(() => {
@@ -73,21 +74,21 @@ function App() {
   return (
     <div className='App'>
       <ShopContextProvider>
-        <ShopContextProviderJewellery>
         <Router>
           <NavbarSP />
           <Routes>
-            <Route path="/home" exact element={ <Home />}/>
+            <Route path="/"  element={ <Home />}/>
+            <Route path="/catering" exact element={ <Catering />}/>
             <Route path="/jewellery" exact element={ <Jewellery />}/>
+            <Route path="/outfit" exact element={ <Bridal />}/>
             <Route path="/blog" exact element={<Blog/>} />
-            <Route path="/" element={<Shop />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/Login" element={<Login />} />
-            <Route path="/checklist" element={<Checklist />} />
-            <Route path="/budget" element={<List />} />
+            <Route path="/shop" exact element={<Shop />} />
+            <Route path="/cart"exact element={<Cart />} />
+            <Route path="/Login"exact element={<Login />} />
+            <Route path="/checklist" exact element={<Checklist />} />
+            <Route path="/budget" exact  element={<List />} />
           </Routes>
         </Router>
-        </ShopContextProviderJewellery>
       </ShopContextProvider>
     </div>
   );

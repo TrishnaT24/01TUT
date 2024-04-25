@@ -2,13 +2,12 @@ import React from 'react';
 import CardItem from './Carditem';
 import './Cards.css';
 import jewellery from './imagesSP/jewellery.jpeg';
+import decor from './imagesSP/decoridea.jpeg';
 import bridal from './imagesSP/bridal wear.jpeg';
-import mehendi from'./imagesSP/mehendi3.jpeg';
+import caterers from './imagesSP/Caterers.jpeg'
 import wedding from './imagesSP/wedding.jpeg';
 import couple from './imagesSP/random couple.jpeg';
-import hands from './imagesSP/hands.jpeg';
-import Blog from '../../startpage/cardfollow/Blog';
-import Jewellery from '../../pages/shop/Jewellery';
+
 
 const Cards = () => {
   return (
@@ -24,11 +23,11 @@ const Cards = () => {
                     <CardItem  src={bridal}
                     text="Imagine the Perfect Bridal Ensemble: Your Dream Wedding Attire Awaits!"
                     label='Bridal Wear'
-                    path='/'/>
-                    <CardItem  src={mehendi}
-                    text="Embrace tradition with stunning henna artistry, adding beautiful colors your celebration."
-                    label='Mehendi'
-                    path='/'/>
+                    path='/outfit'/>
+                    <CardItem  src={caterers}
+                    text="Crafting Culinary Bliss for Your Unforgettable Day!"
+                    label='Catering'
+                    path='/catering'/>
                     
                 </ul>
                 <ul className="cards__items">
@@ -40,9 +39,9 @@ const Cards = () => {
                     text="TOP 5 wedding destinations in India"
                     label='Blog'
                     path='/blog'/>
-                    <CardItem  src={hands}
-                    text="Dont Know about Indian Wedding rituals? Click Here to know more"
-                    label='Rituals'
+                    <CardItem  src={decor}
+                    text="Envision the Perfect Venue: Your Dream Wedding Decor Awaits!"
+                    label='Decor'
                     path='/'/>
                     
                 </ul>
