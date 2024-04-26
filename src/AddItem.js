@@ -1,4 +1,5 @@
 import './additem.css';
+import './additem.css'
 import { MdAddShoppingCart } from "react-icons/md";
 const AddItem = ({newItem,setNewItem,handleSubmit}) => {
   return (

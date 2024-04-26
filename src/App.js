@@ -46,7 +46,7 @@ import {Jewellery} from './pages/shop/Jewellery';
 import { ShopContextProvider } from './context/shop-context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Checklist from './Checklist';
+import Checklist from './checklist';
 import List from './budget';
 import Login from './Login';
 import Home from'./startpage/AppSP';
