@@ -4,7 +4,6 @@ import { ShopContext } from "../../context/shop-context";
 export const Product = (props) => {
   const { id, productName, price, productImage, isJewellery } = props.data;
   const { addToCart, cartItems, cartitemsJewellery } = useContext(ShopContext);
-
   const cartItemCount = isJewellery ? cartitemsJewellery[id] : cartItems[id];
 
   return (
