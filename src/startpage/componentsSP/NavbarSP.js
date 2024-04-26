@@ -53,11 +53,27 @@ const NavbarSP = () => {
             Budget
           </Link>
         </li>
+      
         <li className='nav-item'>
-          <Link to='/shop' className='nav-links' onClick={closeMobileMenuu}>
-            Decor
-          </Link>
-        </li>
+  <Link to='/' className='nav-links' onClick={closeMobileMenuu}>
+    Vendors
+  </Link>
+  <ul className='dropdown-menu'>
+    <li className='dropdown-item'>
+      <Link to='/jewellery' className='dropdown-link'>Jewellery</Link>
+    </li>
+    <li className='dropdown-item'>
+      <Link to='/outfit' className='dropdown-link'> Bridal Wear</Link>
+    </li>
+    <li className='dropdown-item'>
+      <Link to='/catering' className='dropdown-link'>Caterors</Link>
+    </li>
+    <li className='dropdown-item'>
+      <Link to='/shop' className='dropdown-link'>Decor</Link>
+    </li>
+    {/* Add more dropdown items as needed */}
+  </ul>
+</li>
        <li className='nav-item'>
           <Link to='/checklist' className='nav-links' onClick={closeMobileMenuu}>
             Checklist

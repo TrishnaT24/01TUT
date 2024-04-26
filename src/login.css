@@ -1,66 +1,82 @@
 /* login.css */
 
 .background-container {
-    background-image: url('./assests/wedding-6154519_960_720.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-image: url('./assests/wedding-6154519_960_720.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  .container {
-    background-color: rgba(249, 248, 249, 0.5); /* Light pink background color with opacity */
-    padding: 25px;
-    border-radius: 10px;
-  }
-  
-  .login-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -50px;
+}
+
+.container {
+  background-color: rgba(249, 248, 249, 0.5); /* Light pink background color with opacity */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
 
 
-  }
-  
-  .login-wrapper h1 {
-    margin-bottom: 20px;
+}
 
-   
-  }
-  
-  .mail,
-  .pw {
-    margin-bottom: 15px;
-  }
-  
-  .mail label,
-  .pw label {
-    font-weight: bold;
-  }
-  
-  .mail input,
-  .pw input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #e55edf;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #b651aa;
-  }
-  
+.login-wrapper h1 {
+  margin-bottom: 20px;
+
+ 
+}
+
+.mail,
+.pw {
+  margin-bottom: 15px;
+}
+
+.mail label,
+.pw label {
+  font-weight: bold;
+}
+
+.mail input,
+.pw input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e55edf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b651aa;
+}
+.ss{
+  margin-bottom: 100px;
+}
+
+.ss h1{
+  margin-bottom: 20px;
+}
+
+.mt-3.text-center {
+  margin-top: 10px; /* Increase the margin-top to push the button downwards */
+}
+
+.mt-3.text-center button {
+  display: block; /* Ensure the button is displayed as a block element */
+}

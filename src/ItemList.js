@@ -1,4 +1,4 @@
-
+import './itemlist.css'
 import LineItem from "./LineItem";
 const ItemList = ({items,handleCheck,handleDelete}) => {
   return (
