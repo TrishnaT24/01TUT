@@ -7,7 +7,15 @@ function BudgetFilter({ products, setFilteredProducts }) {
   const handleFilterChange = (event) => {
     const budget = parseInt(event.target.value, 10);
     setFilterBudget(budget);
-    setFilteredProducts(products.filter(product => product.price === budget));
+    if (event.target.value === '') {
+      setFilteredProducts(products);
+    }
+    else
+    {
+      setFilteredProducts(products.filter(product => product.price === budget));
+
+    }
+    
   };
 
   return (
