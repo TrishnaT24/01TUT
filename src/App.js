@@ -53,7 +53,6 @@ import Home from'./startpage/AppSP';
 import NavbarSP from './startpage/componentsSP/NavbarSP';
 import { getDocs, doc, collection } from 'firebase/firestore';
 import Blog from './startpage/cardfollow/Blog';
-import { ShopContextProviderJewellery } from './context/shop-context-jewellery';
 
 function App() {
   useEffect(() => {
@@ -73,7 +72,6 @@ function App() {
   return (
     <div className='App'>
       <ShopContextProvider>
-        <ShopContextProviderJewellery>
         <Router>
           <NavbarSP />
           <Routes>
@@ -87,7 +85,6 @@ function App() {
             <Route path="/budget" element={<List />} />
           </Routes>
         </Router>
-        </ShopContextProviderJewellery>
       </ShopContextProvider>
     </div>
   );

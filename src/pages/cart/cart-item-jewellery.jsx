@@ -3,7 +3,7 @@ import { ShopContextJewellery } from '../../context/shop-context-jewellery';
 
 export const CartItemJ = (props) => {
     const { id, productName, price, productImage } = props.data;
-    const { cartitemsJewellery, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContextJewellery);
+    const { cartitemsJewellery, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext);
     const cartItemCount = cartitemsJewellery[id];
   
     return (
