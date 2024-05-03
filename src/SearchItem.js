@@ -1,3 +1,4 @@
+import './searchitem.css';
 const SearchItem = ({search,setSearch}) => {
   return (
     <form className='searchForm' onSubmit={(e) => e.preventDefault()}>

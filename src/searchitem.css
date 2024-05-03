@@ -1,0 +1,40 @@
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the search input horizontally */
+    margin-bottom: 20px;
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+  
+  .searchForm label {
+    margin-right: 10px;
+  }
+  
+  .searchForm input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .searchForm button {
+    padding: 10px 20px; /* Adjust padding to increase button size */
+    background-color: #e55edf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 400px; /* Add margin to the left to create space between the search input and the button */
+  }
+  .searchForm button:hover {
+    background-color: #a12574;
+  }
+  .searchForm button svg {
+    vertical-align: middle;
+  
+  }
+  
+  

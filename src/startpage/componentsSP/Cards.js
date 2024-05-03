@@ -8,7 +8,6 @@ import caterers from './imagesSP/Caterers.jpeg'
 import wedding from './imagesSP/wedding.jpeg';
 import couple from './imagesSP/random couple.jpeg';
 
-
 const Cards = () => {
   return (
     <div className='cards'>

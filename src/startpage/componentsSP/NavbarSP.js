@@ -4,7 +4,8 @@ import logoImage from './JODI JUNCTION_transparent.png'
 import Button from './Button';
 import './NavbarSP.css';
 import { ShoppingCart } from 'phosphor-react';
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
+import AppChat from '../../petters/AppChat';
 
 const NavbarSP = () => {
   const[click,setClick]= useState(false);
@@ -49,8 +50,8 @@ const NavbarSP = () => {
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='/Budget' className='nav-links' onClick={closeMobileMenuu}>
-            Budget
+          <Link to='/Appchat' className='nav-links' onClick={closeMobileMenuu}>
+            Chat
           </Link>
         </li>
       
