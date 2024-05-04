@@ -89,6 +89,13 @@ const NavbarSP = () => {
 
         </ul>
       </div> 
+      <li className='map'>
+            <Link to='/mymap' className='map' onClick={closeMobileMenuu}>
+              <button className='map-btn'>
+                <i className='fas fa-map-marker-alt' />
+              </button>
+            </Link>
+          </li>
       <div className="links">
         <Link to="/shop">Shop</Link>
         <Link to="/cart">

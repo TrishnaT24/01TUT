@@ -22,16 +22,41 @@
 }
 
 .cartItem .description {
-  width: 100%;
-  font-size: 20px; /* Reduce the font size for the description */
+    flex: 1; /* Take remaining space */
+    font-size: 16px; /* Adjusted font size */
+    padding: 3rem;
+  }
+
+
+.countHandler {
+  display: flex;
+  align-items: center;
 }
 
+.countHandler button {
+  width: 30px;
+  height: 30px;
+  background-color: #e745c1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.countHandler button:hover {
+  background-color: #0056b3;
+}
 
 .countHandler input {
   width: 40px;
   text-align: center;
   font-weight: bolder;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
 }
+
 
 .checkout button {
   width: 150px;

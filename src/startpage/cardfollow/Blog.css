@@ -1,37 +1,84 @@
+/* blog.css */
 
-.blog-title {
-  font-size: 40px;
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Container styles */
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #333; /* Change color to your preference */
-  font-family: "Arial", sans-serif; /* Change font-family to your preference */
-  text-align: center; /* Center the text */
-  padding-top: -100px; /* Add padding to move it down */
-  margin-bottom: 50px;
+  color: #333;
+  text-transform: uppercase;
 }
 
-.blog-body {
-  text-align: center; /* Center the text */
-  font-weight: normal; /* Use normal font weight for body text */
-  font-family: "Helvetica", sans-serif; /* Example of a different font family */
-  font-size: 16px; /* Adjust font size as needed */
-  line-height: 1.6; /* Adjust line height for better readability */
-  margin-bottom: 20px; /* Add margin for spacing */
-  font-style: normal;
-  
+/* Main content styles */
+.main {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-  
-  .blog-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .blog-description {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: normal; /* Use normal font weight for body text */
-    font-family: "Helvetica", sans-serif;
-    font-style: normal;
-  }
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-content {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Image styles */
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
