@@ -7,7 +7,7 @@ import {Jewellery} from '../pages/shop/Jewellery';
 import {Bridal} from '../pages/shop/Bridal';
 import Catering from '../pages/shop/Catering';
 import RealWedding from './cardfollow/RealWedding';
-import AppChat from '../petters/AppChat';
+import '../features/checklist.css';
 
 function App() {
   return (
@@ -21,7 +21,6 @@ function App() {
     <Route path="/outfit" exact element={<Bridal/>} />
     <Route path="/catering" exact element={<Catering/>} />
     <Route path="/wedding" exact element={<RealWedding/>} />
-    <Route path="/Appchat" exact element={<AppChat />} />
     </Routes>
     </Router>
     </>

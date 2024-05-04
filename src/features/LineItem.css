@@ -1,0 +1,44 @@
+/* Container for each line item */
+.line-item {
+    margin-bottom: 10px;
+    padding: 10px; /* Add padding for spacing */
+    border-bottom: 1px solid #ccc; /* Add a bottom border for visual separation */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Checkbox styling */
+  .line-item input[type="checkbox"] {
+    margin-right: 10px; /* Increase space between checkbox and label */
+    width: 100px; /* Increase checkbox width */
+    height: 20px; /* Increase checkbox height */
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+  }
+  
+  /* Styling for the label */
+  .line-item label {
+    flex-grow: 1; /* Allow label to grow to take up available space */
+    font-size: 40px; /* Increase font size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+  }
+  
+  /* Trash icon styling */
+  .line-item .trash-icon {
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-left: 12px; /* Increase space between label and icon */
+    font-size: 24px; /* Increase icon size */
+    color: #999; /* Icon color */
+  }
+  
+  /* Hover effect for the trash icon */
+  .line-item .trash-icon:hover {
+    color: #ff6347; /* Change color on hover */
+  }
+  

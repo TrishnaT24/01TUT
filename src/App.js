@@ -15,7 +15,7 @@ import Blog from './startpage/cardfollow/Blog';
 import {Bridal} from './pages/shop/Bridal';
 import  Catering from './pages/shop/Catering';
 import RealWedding from './startpage/cardfollow/RealWedding';
-import AppChat from './petters/AppChat';
+import Login from './Login';
 
 function App() {
 
@@ -33,9 +33,8 @@ function App() {
             <Route path="/blog" exact element={<Blog/>} />
             <Route path="/shop" exact element={<Shop />} />
             <Route path="/cart"exact element={<Cart />} />
-            {/* <Route path="/Login"exact element={<Login />} /> */}
+            <Route path="/Login"exact element={<Login />} /> 
             <Route path="/checklist" exact element={<Checklist />} />
-            <Route path="/Appchat" exact element={<AppChat />} />
 
           </Routes>
         </Router>

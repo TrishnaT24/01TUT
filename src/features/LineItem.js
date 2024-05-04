@@ -1,3 +1,4 @@
+import './LineItem.css';
 import { FaTrashAlt } from "react-icons/fa";
 const LineItem = ({ item, handleCheck, handleDelete }) => {
   return (

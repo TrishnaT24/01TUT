@@ -1,6 +1,6 @@
 import Header from './Header';
 import AddItem from './AddItem';
-import SearchItem from '../SearchItem';
+import SearchItem from './SearchItem';
 import Content from './Content';
 import Footer from './Footer';
 import { useState } from 'react';
@@ -47,7 +47,8 @@ function Checklist (){
 
 return(
     <div className="Checklist" style={{ textAlign: 'center' }}>
-      <p>welcome to us.love meets innovation</p>
+      <p style={{textAlign:'center',fontSize:'30px',backgroundColor:'pink',color:'purple'}}>Welcome to JODI JUNCTION</p>
+      <p style={{textAlign:'center',fontSize:'20px',color:'purple'}}>Where Love meets Innovation</p>
       <Header title="Jodi Junction" />
       <AddItem
       newItem ={newItem}

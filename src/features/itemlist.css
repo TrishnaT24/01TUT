@@ -1,16 +1,23 @@
 /* itemlist.css */
 
+/* Container for the items */
 .item {
-    margin-top: 20px; /* Add some margin at the top */
-  }
-  
-  .item ul {
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-  }
-  
-  /* Style for each individual line item */
-  .item .LineItem {
-    margin-bottom: 10px; /* Add margin between each line item */
-  }
-  
+  margin-top: 20px;
+  border: 1px solid #ccc; /* Add a border for visual appeal */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  padding: 15px; /* Add some padding inside the container */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Remove default list styles for the inner unordered list */
+.item ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for each individual line item */
+.item .LineItem {
+  margin-bottom: 10px;
+  font-size: 18px; /* Increase font size for better readability */
+  color: #9f1b1b; /* Darken text color for better contrast */
+}
