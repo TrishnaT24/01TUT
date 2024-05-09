@@ -9,37 +9,37 @@ import m6 from './bridal-images/outfit7.jpeg';
 export const MPRODUCTS =[
     {
         id:13,
-        productName:"necklace1",
+        productName:"Outfit",
         price: 1000.0,
         productImage: m1,
     },
     {
         id:14,
-        productName:"necklace2",
+        productName:"Outfit2",
         price: 2000.0,
         productImage: m2,
     },
     {
     id:15,
-    productName:"necklace3",
+    productName:"Outfit3",
     price: 500.0,
     productImage: m3,
     },
     {
         id:16,
-        productName:"necklace4",
+        productName:"Outfit4",
         price: 20000.0,
         productImage: m4,
     },
     {
         id:17,
-        productName:"necklace5",
+        productName:"Outfit5",
         price: 10000,
         productImage: m5,
     },
     {
         id:18,
-        productName:"necklace6",
+        productName:"Outfit6",
         price: 2000.0,
         productImage: m6,
     },

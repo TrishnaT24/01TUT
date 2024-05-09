@@ -52,6 +52,17 @@
   margin-top: -90px;
 }
 
+.map {
+  margin-top: -10px;
+  padding-right: 2rem;
+}
+
+.map li {
+  list-style-type: none; /* Remove default list item marker */
+}
+
+  
+
 .nav-links {
   color: #fff;
   display: flex;

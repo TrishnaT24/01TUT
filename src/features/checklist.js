@@ -49,7 +49,6 @@ return(
     <div className="Checklist" style={{ textAlign: 'center' }}>
       <p style={{textAlign:'center',fontSize:'30px',backgroundColor:'pink',color:'purple'}}>Welcome to JODI JUNCTION</p>
       <p style={{textAlign:'center',fontSize:'20px',color:'purple'}}>Where Love meets Innovation</p>
-      <Header title="Jodi Junction" />
       <AddItem
       newItem ={newItem}
       setNewItem={setNewItem}

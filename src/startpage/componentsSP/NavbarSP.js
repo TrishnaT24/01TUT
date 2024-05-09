@@ -56,7 +56,7 @@ const NavbarSP = () => {
       
         <li className='nav-item'>
   <Link to='/' className='nav-links' onClick={closeMobileMenuu}>
-    Vendors
+    Products
   </Link>
   <ul className='dropdown-menu'>
     <li className='dropdown-item'>

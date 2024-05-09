@@ -4,7 +4,7 @@ import { Product } from "./Product";
 import './shop.css';
 import BudgetFilter from "../../budget";
 import { useState } from "react";
-
+//displays bridal wear
 export const Bridal = () => {
   const [filteredProducts, setFilteredProducts] = useState(MPRODUCTS);
   return (

@@ -12,7 +12,7 @@ function BudgetFilter({ products, setFilteredProducts }) {
     }
     else
     {
-      setFilteredProducts(products.filter(product => product.price === budget));
+      setFilteredProducts(products.filter(product => product.price <= budget));
 
     }
     

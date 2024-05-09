@@ -18,7 +18,7 @@ function Login() {
                 .then(data => {
                     console.log(data, "authData");
                     // Redirect to home or any other page after sign up
-                    navigate('/home');
+                    navigate('/');
                 })
                 .catch(err => {
                     alert(err.code);
@@ -29,7 +29,7 @@ function Login() {
                 .then(data => {
                     console.log(data, "authData");
                     // Redirect to home or any other page after sign in
-                    navigate('/home');
+                    navigate('/');
                 })
                 .catch(err => {
                     alert(err.code);
